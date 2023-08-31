@@ -1,0 +1,33 @@
+/* autoprefixer grid: on */
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import './sass/abstracts/variables';
+@import './sass/abstracts/mixin';
+@import './sass/base/animations';
+@import './sass/base/base';
+@import './sass/base/typography';
+@import './sass/components/nav-bar';
+@import './sass/components/backgroundVideo';
+@import './sass/components/about';
+@import './sass/components/contact-success';
+@import './sass/components/process';
+@import './sass/components/portfolio';
+@import './sass/components/projectInDepth';
+@import './sass/components/process-page';
+@import './sass/components/contact';
+@import './sass/components/imageSlider';
+@import './sass/components/contactpage';
+@import './sass/components/projectContact';
+@import './sass/components/technicalPage';
+@import './sass/components/notfound';
+
+@import './sass/components/gradient';
+@import './sass/components/banner';
+@import './sass/components/our-work';
+@import './sass/components/carousel';
+@import './sass/components/services';
+@import './sass/components/servicespage';
+@import './sass/components/footer';
+@import './sass/layout/main-container';
+@import '~bootstrap/scss/carousel';

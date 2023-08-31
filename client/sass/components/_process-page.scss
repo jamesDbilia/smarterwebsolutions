@@ -1,0 +1,118 @@
+.process-page {
+  &__section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: 80em) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__intro-section {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: minmax(5%, 1fr) 80% minmax(5%, 1fr);
+    margin: 5rem 0;
+  }
+  &__header {
+    font-size: 3.7rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    grid-column: 2/3;
+  }
+  &__intro-paragraph {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    line-height: 3.5rem;
+    grid-column: 2/3;
+    @media only screen and (max-width: 40em) {
+      font-size: 2.4rem;
+    }
+  }
+  &__image {
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+    @media only screen and (max-width: 80em) {
+      height: 30rem;
+    }
+    &--1 {
+      @media only screen and (max-width: 80em) {
+        grid-row: 2/3;
+      }
+    }
+    &--2 {
+      @media only screen and (max-width: 80em) {
+        grid-row: 4/5;
+      }
+    }
+    &--3 {
+      @media only screen and (max-width: 80em) {
+        grid-row: 6/7;
+      }
+    }
+    &--4 {
+      @media only screen and (max-width: 80em) {
+        grid-row: 8/9;
+      }
+    }
+    &--5 {
+      @media only screen and (max-width: 80em) {
+        grid-row: 10/11;
+      }
+    }
+  }
+  &__section-text {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: minmax(8%, 1fr) minmax(35rem, 60rem) minmax(8%, 1fr);
+    @media only screen and (max-width: 80em) {
+      grid-template-columns: minmax(8%, 1fr) minmax(35rem, 100rem) minmax(
+          8%,
+          1fr
+        );
+      padding: 5rem 0;
+    }
+  }
+  &__section-header {
+    font-size: 3.5rem;
+    grid-column: 2/3;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 3rem;
+    padding-bottom: 2px;
+    border-bottom: 5px solid #26a8ff;
+
+    align-self: end;
+    justify-self: start;
+    @media only screen and (max-width: 80em) {
+      margin-bottom: 3rem;
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: 40em) {
+      font-size: 4.5rem;
+      border-bottom: 3px solid #26a8ff;
+    }
+  }
+  &__section-paragraph {
+    font-size: 1.3rem;
+    grid-column: 2/3;
+    justify-self: start;
+    line-height: 4rem;
+    font-weight: 300;
+    margin-top: 3rem;
+
+    color: #333;
+    align-self: start;
+    @media only screen and (max-width: 80em) {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    @media only screen and (max-width: 40em) {
+      font-weight: 500;
+      font-size: 2.3rem;
+    }
+  }
+}

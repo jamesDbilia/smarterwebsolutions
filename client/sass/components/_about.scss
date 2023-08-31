@@ -1,0 +1,47 @@
+.about {
+  display: grid;
+  grid-template-columns: minmax(5%, 1fr) repeat(2, minmax(10rem, 60rem)) minmax(
+      5%,
+      1fr
+    );
+  align-items: center;
+  justify-items: center;
+  column-gap: 5%;
+  @include respond(tab-port) {
+    column-gap: 0%;
+  }
+
+  &__heading {
+    grid-column: 2/4;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    @include respond(tab-port) {
+      margin: 2rem 0 0;
+      font-size: 4.5rem;
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    margin: 2rem 0 5rem 0;
+    line-height: 5rem;
+    grid-column: 2/3;
+    @include respond(tab-port) {
+      grid-column: 2/4;
+      grid-row: 3/4;
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 3.5rem;
+      margin: 2rem 0 2rem 0;
+    }
+  }
+  &__img {
+    grid-column: 3/4;
+    width: 100%;
+    margin: 2rem 0 5rem 0;
+    @include respond(tab-port) {
+      grid-column: 2/4;
+      grid-row: 4/5;
+      margin: 2rem 0 4rem 0;
+    }
+  }
+}

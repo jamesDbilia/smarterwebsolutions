@@ -1,0 +1,30 @@
+.contact-success {
+  height: 70vh;
+  transform: translateY(20rem);
+  margin-left: 10rem;
+  &__text {
+    font-size: 2.2rem;
+    width: 70%;
+    font-weight: 400;
+  }
+  &__button {
+    width: 25rem;
+    background-color: $color-primary;
+    display: grid;
+    height: 5rem;
+    margin-top: 5rem;
+    align-items: center;
+    justify-items: center;
+    justify-self: start;
+    border-radius: 3px;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    border: none;
+    font-size: 1.9rem;
+
+    cursor: pointer;
+    &--text {
+      font-size: 1.9rem;
+    }
+  }
+}

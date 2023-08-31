@@ -1,0 +1,254 @@
+.fit {
+  object-fit: cover;
+  width: 100%;
+  height: 72rem;
+  z-index: -2;
+  backface-visibility: hidden;
+  @media only screen and (max-width: 50em) {
+    height: 55rem;
+  }
+
+  @media only screen and (max-width: 43em) {
+    height: 45rem;
+  }
+  &--grivety {
+    height: 40rem;
+    margin-bottom: 5rem;
+    width: 80%;
+    transform: translateX(13%);
+    object-fit: contain;
+  }
+}
+
+.sr-only {
+  color: transparent;
+  z-index: -1000;
+  visibility: hidden;
+}
+
+.carousel {
+  animation-fill-mode: backwards;
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    grid-template-columns: minmax(5%, 1fr) minmax(1rem, 105rem) minmax(5%, 1fr);
+    justify-content: center;
+
+    // &--1 {
+    //   justify-content: center;
+    //   // justify-items: center;
+    // }
+    // &--2 {
+    //   text-align: left;
+    //   display: grid;
+    //   justify-content: start;
+    // }
+    // &--3 {
+    //   text-align: end;
+    //   display: grid;
+    //   justify-content: end;
+    // }
+  }
+  &__inner-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    transform: translateY(2rem);
+  }
+
+  &__header-1-background {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: max-content;
+    justify-self: center;
+    justify-content: center;
+    animation: carouselHeader1Up 2s ease 0.5s;
+    animation-fill-mode: backwards;
+    // &--1 {
+    //   justify-self: start;
+    //   justify-content: start;
+    // }
+    // &--2 {
+    //   justify-self: end;
+    //   justify-content: end;
+    // }
+  }
+  &__header-1 {
+    background: linear-gradient(
+      to right,
+      rgba(38, 168, 255, 0.801),
+      rgba(38, 168, 255, 0.801)
+    );
+    border-radius: 0.3rem;
+
+    font-size: 5.2rem;
+    @media only screen and (max-width: 63.9em) {
+      font-size: 4.5rem;
+    }
+    @media only screen and (max-width: 51em) {
+      font-size: 3.9rem;
+    }
+    @media only screen and (max-width: 43em) {
+      font-size: 3.5rem;
+      // font-weight: 300;
+    }
+    @media only screen and (max-width: 30em) {
+      font-size: 3.2rem;
+    }
+    @media only screen and (max-width: 25em) {
+      font-size: 3.6rem;
+    }
+
+    padding: 1rem 2rem;
+    // text-transform: uppercase;
+    color: #fff;
+  }
+  &__header-5-background {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: max-content;
+    justify-self: center;
+    justify-content: center;
+    animation: carouselTagLineUp 2s ease 1s;
+    animation-fill-mode: backwards;
+    // &--1 {
+    //   justify-content: start;
+    // }
+    // &--2 {
+    //   justify-content: end;
+    // }
+  }
+  &__header-5 {
+    border-radius: 0.3rem;
+    background: linear-gradient(
+      to right,
+      rgba(38, 168, 255, 0.801),
+      rgba(38, 168, 255, 0.801)
+    );
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    // @media only screen and (max-width: 51em) {
+    //   font-size: 1.5rem;
+    // }
+    @media only screen and (max-width: 40em) {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    @media only screen and (max-width: 25em) {
+      font-size: 1.5rem;
+    }
+
+    color: rgb(240, 238, 238);
+    &--2 {
+      max-width: 56rem;
+      justify-self: center;
+      text-align: center;
+      width: 90%;
+      // @media only screen and (max-width: 25em) {
+      //   font-size: 1rem;
+      //   width: 50%;
+      //   transform: translateX(50%);
+      // }
+    }
+  }
+
+  &__button {
+    border: none;
+    color: #fff;
+    padding: 1.3rem 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    @media only screen and (max-width: 50em) {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+    @media only screen and (max-width: 40em) {
+      padding: 0.7rem 1.4rem;
+      font-size: 1.7rem;
+    }
+    border-radius: 31px;
+    background: linear-gradient(
+      to right,
+      rgba(38, 168, 255, 0.801),
+      rgba(38, 168, 255, 0.801)
+    );
+
+    animation: carouselButtonUp 2s ease 1.5s;
+    animation-fill-mode: backwards;
+    transition: all 0.5s ease;
+    border: 1px solid #fff;
+    cursor: pointer;
+    &-container {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 1rem 3rem rgb(224, 224, 224);
+      background: linear-gradient(
+        to right,
+        rgba(38, 168, 255, 0.801),
+        rgba(38, 168, 255, 0.801)
+      );
+    }
+    &--text {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .carousel-control {
+    &-next {
+      margin-right: 2rem;
+      padding-left: 0.2rem;
+      @media only screen and (max-width: 29em) {
+        margin-right: 0.5rem;
+      }
+    }
+    &-prev {
+      margin-left: 3rem;
+      padding-right: 0.2rem;
+      @media only screen and (max-width: 29em) {
+        margin-left: 1rem;
+      }
+    }
+
+    &-prev,
+    &-next {
+      opacity: 0.7;
+    }
+  }
+  .carousel-control {
+    &-next-icon,
+    &-prev-icon {
+      width: 3rem;
+      height: 3rem;
+      @media only screen and (max-width: 29em) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+  .carousel-control-next-icon {
+    margin-left: 3rem;
+  }
+  .carousel-indicators li {
+    width: 3rem;
+    height: 0.3rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+  }
+}

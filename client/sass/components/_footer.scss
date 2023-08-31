@@ -1,0 +1,194 @@
+.footer {
+  display: grid;
+  z-index: 200;
+  grid-template-rows: min-content;
+  &__main {
+    grid-template-columns:
+      minmax(10%, 1fr) 17rem repeat(3, minmax(22rem, 35rem))
+      minmax(10%, 1fr);
+    @media only screen and (max-width: 37.5em) {
+      grid-template-columns:
+        minmax(10%, 1fr) repeat(2, minmax(22rem, 50rem))
+        minmax(10%, 1fr);
+    }
+    display: grid;
+    justify-items: center;
+    background-color: rgb(39, 39, 39);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__column {
+    display: grid;
+    grid-template-rows: min-content;
+    justify-items: center;
+    // align-items: center;
+    margin: 3rem 0;
+    @media only screen and (max-width: 37.5em) {
+      column-gap: 5%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      margin: 1rem 0;
+    }
+    @media only screen and (min-width: 37.6em) {
+      grid-row: 1/2;
+    }
+
+    &--1 {
+      grid-column: 2/3;
+      text-align: center;
+
+      @media only screen and (max-width: 37.5em) {
+        // justify-self: end;
+        // padding-right: 8rem;
+      }
+    }
+    &--2 {
+      padding-left: 2rem;
+      grid-column: 3/4;
+      width: 80%;
+      text-align: center;
+      @media only screen and (max-width: 37.5em) {
+      }
+    }
+    &--3 {
+      grid-column: 4/5;
+      padding: 0 0.2rem 0 8rem;
+      text-align: center;
+
+      @media only screen and (max-width: 37.5em) {
+        // justify-self: end;
+        padding: 0 0.2rem 0 0rem;
+
+        grid-column: 2/3;
+      }
+    }
+    &--4 {
+      grid-column: 5/6;
+      padding: 0 0.2rem 0 0;
+      @media only screen and (max-width: 37.5em) {
+        grid-column: 3/4;
+        // padding-left: 8rem;
+      }
+    }
+  }
+  &__logo {
+    width: 85rem;
+    justify-self: center;
+    opacity: 0.15;
+    z-index: 1;
+    grid-row: 1/2;
+    grid-column: 1/7;
+    @media only screen and (max-width: 37.5em) {
+      width: 35rem;
+      opacity: 1;
+    }
+  }
+  &__column-header {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 1.1rem 0;
+    z-index: 2;
+    @media only screen and (max-width: 37.5em) {
+      grid-template-columns:
+        minmax(10%, 1fr) repeat(2, minmax(22rem, 50rem))
+        minmax(10%, 1fr);
+      font-size: 2.4rem;
+    }
+  }
+  &__text {
+    z-index: 2;
+
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    align-self: start;
+    text-align: center;
+    @media only screen and (max-width: 37.5em) {
+      font-size: 1.9rem;
+    }
+    &--paragraph {
+      margin-top: 0.5rem;
+      line-height: 2.3rem;
+    }
+    &--link {
+      justify-self: start;
+      grid-column: 1/2;
+      margin: 0.2rem 0;
+    }
+  }
+  &__link-section {
+    display: grid;
+    align-self: start;
+  }
+  &__copyright {
+    font-size: 1.4rem;
+    @media only screen and (max-width: 37.5em) {
+      font-size: 2.1rem;
+      margin-top: 1.5rem;
+    }
+    color: #888;
+    justify-self: center;
+    grid-row: 2/3;
+    grid-column: 1/7;
+    @include respond(tab-port) {
+      justify-self: center;
+      grid-row: 4/5;
+    }
+  }
+  &__info-section {
+    display: grid;
+    // padding-top: 0.5rem;
+    align-items: start;
+    padding-right: 0.5rem;
+  }
+
+  &__info-header-section {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(1, max-content);
+    padding-top: 0.5rem;
+  }
+  &__contact-info {
+    grid-row: 1/2;
+    align-self: start;
+    padding-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  &__info-icon {
+    width: 2rem;
+    height: 2rem;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: start;
+    fill: #fff;
+    margin: 0.5rem 1rem 0.7rem 0;
+  }
+  &__social-icon-section {
+    cursor: pointer;
+    opacity: 1;
+    z-index: 2;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    &--1 {
+      justify-self: end;
+    }
+    &--2 {
+      justify-self: start;
+    }
+  }
+  &__social-icon {
+    width: 3rem;
+    height: 3rem;
+    &--1 {
+      margin-right: 1rem;
+    }
+    &--2 {
+      margin-left: 1rem;
+    }
+  }
+}
