@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "NODE_ENV='development' node server.js",
     "build": "next build && next export",
