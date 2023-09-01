@@ -3,7 +3,7 @@ import Grivety from '../components/Grivety';
 import Mediaor from '../components/Mediaor';
 import CleanSoils from '../components/CleanSoils';
 import grivetyLogo from '../public/img/svg/grivetylogo-1.svg';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import mediaor from '../public/img/svg/mediaor.svg';
 import Link from 'next/link';
 import backgroundImage from '../public/img/svg/background.svg';
@@ -58,7 +58,7 @@ function Portfolio(props) {
                   className='portfolio__logo--bottom'
                   onClick={() => setApp('cleanSoils')}
                 >
-                  <use href={sprite + '#cleanSoils'}></use>
+                  {/* <use href={sprite + '#cleanSoils'}></use> */}
                 </svg>
                 <img
                   className='portfolio__logo--bottom'
@@ -82,7 +82,7 @@ function Portfolio(props) {
                       className='portfolio__logo--bottom'
                       onClick={() => setApp('cleanSoils')}
                     >
-                      <use href={sprite + '#cleanSoils'}></use>
+                      {/* <use href={sprite + '#cleanSoils'}></use> */}
                     </svg>
                     <img
                       src={grivetyLogo}
@@ -119,7 +119,7 @@ function Portfolio(props) {
                       onClick={() => setApp('cleanSoils')}
                       style={{ marginLeft: '2rem' }}
                     >
-                      <use href={sprite + '#cleanSoils'}></use>
+                      {/* <use href={sprite + '#cleanSoils'}></use> */}
                     </svg>
                   </>
                 )}
@@ -135,7 +135,7 @@ function Portfolio(props) {
                     )
                   }
                 >
-                  <use href={sprite + '#next-button'}></use>
+                  {/* <use href={sprite + '#next-button'}></use> */}
                 </svg>
               </div>
             ) : (
@@ -145,7 +145,7 @@ function Portfolio(props) {
                     className='portfolio__logo--bottom'
                     onClick={() => setApp('cleanSoils')}
                   >
-                    <use href={sprite + '#cleanSoils'}></use>
+                    {/* <use href={sprite + '#cleanSoils'}></use> */}
                   </svg>
                 ) : app === 'grivety' ? (
                   <img
@@ -174,7 +174,7 @@ function Portfolio(props) {
                     )
                   }
                 >
-                  <use href={sprite + '#arrow'}></use>
+                  {/* <use href={sprite + '#arrow'}></use> */}
                 </svg>
               </div>
             )}

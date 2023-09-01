@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import technical from '../public/img/codingCloseUp.jpg';
 import technicalSmall from '../public/img/codingCloseUpSmall.jpg';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import technical1 from '../public/img/codingCloseUp.webp';
 import technical1Small from '../public/img/codingCloseUpSmall.webp';
 import { useRouter } from 'next/router';
@@ -38,7 +38,7 @@ function TechnicalPage(props) {
         <div className='technical__group'>
           <div className='technical__item'>
             <svg className='technical__icon'>
-              <use href={sprite + '#js-1'}></use>
+              {/* <use href={sprite + '#js-1'}></use> */}
             </svg>
             <h4 className='technical__item-header'>Javascript</h4>
             <p className='technical__item-paragraph'>
@@ -48,7 +48,7 @@ function TechnicalPage(props) {
           </div>
           <div className='technical__item'>
             <svg className='technical__icon'>
-              <use href={sprite + '#node'}></use>
+              {/* <use href={sprite + '#node'}></use> */}
             </svg>
             <h4 className='technical__item-header'>Node.js</h4>
             <p className='technical__item-paragraph'>
@@ -59,7 +59,7 @@ function TechnicalPage(props) {
           </div>
           <div className='technical__item'>
             <svg className='technical__icon'>
-              <use href={sprite + '#css-3'}></use>
+              {/* <use href={sprite + '#css-3'}></use> */}
             </svg>
             <h4 className='technical__item-header'>CSS</h4>
             <p className='technical__item-paragraph'>
@@ -70,7 +70,7 @@ function TechnicalPage(props) {
           </div>
           <div className='technical__item'>
             <svg className='technical__icon'>
-              <use href={sprite + '#html'}></use>
+              {/* <use href={sprite + '#html'}></use> */}
             </svg>
             <h4 className='technical__item-header'>HTML</h4>
             <p className='technical__item-paragraph'>
@@ -81,7 +81,7 @@ function TechnicalPage(props) {
           </div>
           <div className='technical__item'>
             <svg className='technical__icon'>
-              <use href={sprite + '#react'}></use>
+              {/* <use href={sprite + '#react'}></use> */}
             </svg>
             <h4 className='technical__item-header'>React</h4>
             <p className='technical__item-paragraph'>
@@ -92,7 +92,7 @@ function TechnicalPage(props) {
           </div>
           <div className='technical__item'>
             <svg className='technical__icon'>
-              <use href={sprite + '#redux'}></use>
+              {/* <use href={sprite + '#redux'}></use> */}
             </svg>
             <h4 className='technical__item-header'>Redux</h4>
             <p className='technical__item-paragraph'>
@@ -103,7 +103,7 @@ function TechnicalPage(props) {
           </div>
           <div className='technical__item'>
             <svg className='technical__icon technical__icon--mongo'>
-              <use href={sprite + '#mongodb'}></use>
+              {/* <use href={sprite + '#mongodb'}></use> */}
             </svg>
             <h4 className='technical__item-header'>MongoDB</h4>
             <p className='technical__item-paragraph'>
@@ -114,7 +114,7 @@ function TechnicalPage(props) {
           </div>
           <div className='technical__item'>
             <svg className='technical__icon'>
-              <use href={sprite + '#sass'}></use>
+              {/* <use href={sprite + '#sass'}></use> */}
             </svg>
             <h4 className='technical__item-header'>Sass</h4>
             <p

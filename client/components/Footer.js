@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../public/img/logo.png';
 import logoweb from '../public/img/logo.webp';
 import Link from 'next/link';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import { useMediaQuery } from '../utils/ScreenWidth';
 
 function Footer(props) {
@@ -57,7 +57,7 @@ function Footer(props) {
             <div className='footer__info-section--col-1'>
               <div className='footer__info-header-section'>
                 <svg className='footer__info-icon'>
-                  <use href={sprite + '#location'}></use>{' '}
+                  {/* <use href={sprite + '#location'}></use>{' '} */}
                 </svg>
                 {!mediaQuery ? (
                   <p className='footer__text footer__contact-info'>
@@ -74,7 +74,7 @@ function Footer(props) {
 
               <div className='footer__info-header-section'>
                 <svg className='footer__info-icon'>
-                  <use href={sprite + '#phone-call'}></use>
+                  {/* <use href={sprite + '#phone-call'}></use> */}
                 </svg>
                 <a
                   href='tel:416-577-4245'
@@ -86,7 +86,7 @@ function Footer(props) {
 
               <div className='footer__info-header-section'>
                 <svg className='footer__info-icon'>
-                  <use href={sprite + '#email'}></use>
+                  {/* <use href={sprite + '#email'}></use> */}
                 </svg>
                 <a
                   href='mailto:contact@smarterwebsolutions.ca'
@@ -113,7 +113,7 @@ function Footer(props) {
             rel='noreferrer'
           >
             <svg className='footer__social-icon footer__social-icon--1'>
-              <use href={sprite + '#facebook'}></use>
+              {/* <use href={sprite + '#facebook'}></use> */}
             </svg>
           </a>
 
@@ -124,7 +124,7 @@ function Footer(props) {
             rel='noreferrer'
           >
             <svg className='footer__social-icon  footer__social-icon--2'>
-              <use href={sprite + '#instagram'}></use>
+              {/* <use href={sprite + '#instagram'}></use> */}
             </svg>
           </a>
 

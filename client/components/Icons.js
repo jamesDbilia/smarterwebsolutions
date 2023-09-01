@@ -1,5 +1,5 @@
 import React from 'react';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import { useInView } from 'react-intersection-observer';
 import IconInfo from './IconInfo';
 
@@ -30,37 +30,37 @@ function Icons({ icons, text, backgroundColor }) {
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
           <svg className='project__project-icon'>
-            <use href={sprite + icons[0]}></use>
+            {/* <use href={sprite + icons[0]}></use> */}
           </svg>
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
           <svg className='project__project-icon'>
-            <use href={sprite + icons[1]}></use>
+            {/* <use href={sprite + icons[1]}></use> */}
           </svg>
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
           <svg className='project__project-icon'>
-            <use href={sprite + icons[2]}></use>
+            {/* <use href={sprite + icons[2]}></use> */}
           </svg>
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
           <svg className='project__project-icon' style={{ backgroundColor }}>
-            <use href={sprite + icons[3]}></use>
+            {/* <use href={sprite + icons[3]}></use> */}
           </svg>
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
           <svg className='project__project-icon'>
-            <use href={sprite + icons[4]}></use>
+            {/* <use href={sprite + icons[4]}></use> */}
           </svg>
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
           <svg className='project__project-icon'>
-            <use href={sprite + icons[5]}></use>
+            {/* <use href={sprite + icons[5]}></use> */}
           </svg>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import ContactFormSmall from '../components/ContactFormSmall';
 import contact from '../public/img/contact.jpg';
 import contactSmall from '../public/img/contactSmall.jpg';
@@ -69,7 +69,7 @@ function ContactPage(props) {
             <div className='contact-page__info-section--col-1'>
               <div className='contact-page__info-header-section'>
                 <svg className='contact-page__info-icon'>
-                  <use href={sprite + '#location'}></use>{' '}
+                  {/* <use href={sprite + '#location'}></use>{' '} */}
                 </svg>
                 <h5 className='contact-page__info-header'>Address</h5>
               </div>
@@ -79,7 +79,7 @@ function ContactPage(props) {
 
               <div className='contact-page__info-header-section'>
                 <svg className='contact-page__info-icon'>
-                  <use href={sprite + '#phone-call'}></use>
+                  {/* <use href={sprite + '#phone-call'}></use> */}
                 </svg>
 
                 <h5 className='contact-page__info-header'>Phone</h5>
@@ -93,7 +93,6 @@ function ContactPage(props) {
 
               <div className='contact-page__info-header-section'>
                 <svg className='contact-page__info-icon'>
-                  <use href={sprite + '#email'}></use>
                 </svg>
 
                 <h5 className='contact-page__info-header'>Email</h5>

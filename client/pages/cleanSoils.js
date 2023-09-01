@@ -4,7 +4,7 @@ import cleanSoilsFan from '../public/img/cleansoilsfan-min.png';
 import cleanSoilsFanSmall from '../public/img/cleansoilsfanSmall-min.png';
 import cleanSoilsFanweb from '../public/img/cleansoilsfan-min.webp';
 import cleanSoilsFanSmallweb from '../public/img/cleansoilsfanSmall-min.webp';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import ContactUsProject from '../components/ContactUsProject';
 import ColorPalette from '../components/ColorPalette';
 import { useInView } from 'react-intersection-observer';
@@ -34,7 +34,7 @@ function CleanSoilsPage(props) {
       </Head>{' '}
       <div className='project'>
         <svg className='portfolio__company-logo'>
-          <use href={sprite + '#cleanSoils'}></use>
+          {/* <use href={sprite + '#cleanSoils'}></use> */}
         </svg>
         <p className='project__description'>
           Clean Soils was looking to upgrade their site to professional look so
@@ -143,7 +143,7 @@ function CleanSoilsPage(props) {
           <Link href='/grivety'>
             <a className='project__next-button-arrow'>
               <svg className='project__next-icon'>
-                <use href={sprite + '#play'}></use>
+                {/* <use href={sprite + '#play'}></use> */}
               </svg>
             </a>
           </Link>

@@ -1,5 +1,5 @@
 import React from 'react';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 function Process(props) {
   return (
     <div className='process'>
@@ -10,35 +10,35 @@ function Process(props) {
         <h3 className='process__step process__step--1'>Planning</h3>
         <div className='process__section process__section--1'>
           <svg className='process__icon process__icon--1'>
-            <use href={`${sprite}#planning`}></use>
+            {/* <use href={`${sprite}#planning`}></use> */}
           </svg>
         </div>
         <h3 className='process__step process__step--2  '>Blueprint</h3>
         <div className='process__section process__section--2'>
           <div className='process__line-border '></div>
           <svg className='process__icon '>
-            <use href={`${sprite}#wireframe`}></use>
+            {/* <use href={`${sprite}#wireframe`}></use> */}
           </svg>
         </div>
         <h3 className='process__step process__step--3 '>Design</h3>
         <div className='process__section process__section--3'>
           <div className='process__line-border '></div>
           <svg className='process__icon '>
-            <use href={`${sprite}#web-design`}></use>
+            {/* <use href={`${sprite}#web-design`}></use> */}
           </svg>
         </div>
         <h3 className='process__step process__step--4 '>Code</h3>
         <div className='process__section process__section--4'>
           <div className='process__line-border '></div>
           <svg className='process__icon '>
-            <use href={`${sprite}#web-programming`}></use>
+            {/* <use href={`${sprite}#web-programming`}></use> */}
           </svg>
         </div>
         <h3 className='process__step process__step--5 '>Deployment</h3>
         <div className='process__section process__section--5'>
           <div className='process__line-border '></div>
           <svg className='process__icon '>
-            <use href={`${sprite}#file-upload`}></use>
+            {/* <use href={`${sprite}#file-upload`}></use> */}
           </svg>
         </div>
       </div>

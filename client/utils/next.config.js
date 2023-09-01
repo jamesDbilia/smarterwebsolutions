@@ -1,9 +1,17 @@
 const withImages = require('next-optimized-images');
 const withCss = require('@zeit/next-css');
-const withSass = require('@zeit/next-sass');
+const withReactSvg = require('next-react-svg');
+const path = require('path');
 
 module.exports = withImages(
-  { responsive: { adapter: require('responsive-loader/sharp') } },
-  withSass({ minified: true }, withCss()),
-  { trailingSlash: true }
+  withCss(
+    withReactSvg({
+      include: path.resolve(__dirname, 'public/svg'),
+      webpack(config, options) {
+        // Add any additional webpack configurations if necessary
+        return config;
+      },
+      trailingSlash: true,
+    })
+  )
 );

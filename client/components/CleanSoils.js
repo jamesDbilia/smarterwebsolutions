@@ -7,14 +7,14 @@ import cleanSoilsweb from '../public/img/cleanSoils1.webp';
 import cleanSoilsSmallweb from '../public/img/cleanSoils1Small.webp';
 import cleanSoils1web from '../public/img/cleanSoils2.webp';
 import cleanSoils1Smallweb from '../public/img/cleanSoils2Small.webp';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import Link from 'next/link';
 
 function CleanSoils(props) {
   return (
     <>
       <svg className='portfolio__company-logo'>
-        <use href={sprite + '#cleanSoils'}></use>
+        {/* <use href={sprite + '#cleanSoils'}></use> */}
       </svg>
       <p className='portfolio__description'>
         Clean Soils wanted to build a modern website to rival their competitors.

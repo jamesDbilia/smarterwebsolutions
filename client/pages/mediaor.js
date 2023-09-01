@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
-
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import ContactUsProject from '../components/ContactUsProject';
 import ColorPalette from '../components/ColorPalette';
 import { useInView } from 'react-intersection-observer';
@@ -161,7 +160,7 @@ function MediaorPage() {
           <Link href='/cleanSoils'>
             <a className='project__next-button-arrow'>
               <svg className='project__next-icon'>
-                <use href={sprite + '#play'}></use>
+                {/* <use href={sprite + '#play'}></use> */}
               </svg>
             </a>
           </Link>

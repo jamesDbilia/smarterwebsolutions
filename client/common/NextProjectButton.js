@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import sprite from '../public/img/svg/sprite.svg';
+import sprite from '../public/svg/sprite.svg';
 
 function NextProjectButton(props) {
   return (

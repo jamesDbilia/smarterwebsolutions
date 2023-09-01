@@ -1,5 +1,5 @@
 import React from 'react';
-import sprite from '../public/img/svg/sprite.svg';
+// import sprite from '../public/svg/sprite.svg';
 import Link from 'next/link';
 import { useMediaQuery } from '../utils/ScreenWidth';
 function Services(props) {
@@ -22,7 +22,7 @@ function Services(props) {
             className=' service__item'
           >
             <svg className='service__icon'>
-              <use href={sprite + '#ux-design'}></use>
+              {/* <use href={sprite + '#ux-design'}></use> */}
             </svg>
             <div className='heading-4__section'>
               <h4 className='heading-4'>Modern UI/UX Design</h4>
@@ -53,7 +53,7 @@ function Services(props) {
           className=' service__item'
         >
           <svg className='service__icon'>
-            <use href={sprite + '#coding'}></use>
+            {/* <use href={sprite + '#coding'}></use> */}
           </svg>
           <div className='heading-4__section'>
             <h4 className='heading-4'>Responsive Design</h4>
@@ -87,7 +87,7 @@ function Services(props) {
           className=' service__item'
         >
           <svg className='service__icon'>
-            <use href={sprite + '#ecommerce'}></use>
+            {/* <use href={sprite + '#ecommerce'}></use> */}
           </svg>
           <div className='heading-4__section'>
             <h4 className='heading-4'>Profit Online</h4>
@@ -119,7 +119,7 @@ function Services(props) {
           className=' service__item'
         >
           <svg className='service__icon'>
-            <use href={sprite + '#dashboard'}></use>
+            {/* <use href={sprite + '#dashboard'}></use> */}
           </svg>
           <div className='heading-4__section'>
             <h4 className='heading-4'>Customized Systems</h4>
@@ -151,7 +151,7 @@ function Services(props) {
           className=' service__item'
         >
           <svg className='service__icon'>
-            <use href={sprite + '#api'}></use>
+            {/* <use href={sprite + '#api'}></use> */}
           </svg>
           <div className='heading-4__section'>
             <h4 className='heading-4'>Technology Integration</h4>
@@ -190,7 +190,7 @@ function Services(props) {
               marginBottom: !mediaQuery ? '4rem' : '5rem',
             }}
           >
-            <use href={sprite + '#android'}></use>
+            {/* <use href={sprite + '#android'}></use> */}
           </svg>
           <svg
             className='service__icon service-icon--modified'
@@ -201,7 +201,7 @@ function Services(props) {
               fill: '#bd80e1',
             }}
           >
-            <use href={sprite + '#apple'}></use>
+            {/* <use href={sprite + '#apple'}></use> */}
           </svg>
           <div className='heading-4__section'>
             <h4 className='heading-4'>Mobile Flexibility</h4>
