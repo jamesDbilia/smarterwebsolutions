@@ -14,6 +14,7 @@
   "description": "Website for Smarter Web Solutions",
   "main": "index.js",
   "dependencies": {
+    "@xdn/next": "^2.53.6",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
