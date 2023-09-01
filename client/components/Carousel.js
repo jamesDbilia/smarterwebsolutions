@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import peopleMeeting from '../public/img/WebDesign.jpg';
+// import peopleMeeting from '../public/img/WebDesign.jpg';
 import peopleMeetingSmall from '../public/img/WebDesignSmall.jpg';
 import peopleMeetingwebSmall from '../public/img/WebDesignSmall.webp';
 import peopleMeetingweb from '../public/img/WebDesign.webp';
@@ -44,16 +44,16 @@ function CarouselSection() {
               srcSet={`${peopleMeetingwebSmall} 600w, ${peopleMeetingweb}`}
               type='image/webp'
             />
-            <source
+            {/* <source
               srcSet={`${peopleMeeting} 600w, ${peopleMeetingSmall}`}
               type='image/jpeg'
-            />
-            <img
+            /> */}
+            {/* <img
               src={peopleMeeting}
               alt='First slide'
               className='fit'
               loading='lazy'
-            />
+            /> */}
           </picture>
         </Carousel.Item>
 

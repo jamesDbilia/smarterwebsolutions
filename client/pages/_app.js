@@ -33,7 +33,7 @@ const MyApp = ({ Component, pageProps }) => {
             name='keywords'
             content='web development, web design, e-commerce, website, developer, software, coding, web design toronto, toronto'
           />
-          <meta name='image' content='../src/img/WebDesign.jpg'></meta>
+          {/* <meta name='image' content='../src/img/WebDesign.jpg'></meta> */}
         </Head>
         <DynamicComponent />
         <ToTopPageOnReload>
