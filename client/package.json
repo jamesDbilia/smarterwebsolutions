@@ -4,7 +4,7 @@
   },
   "scripts": {
     "dev": "NODE_ENV='development' node server.js",
-    "build": "next build && next export",
+    "build": "next --openssl-legacy-provider build && next export",
     "start": "next start"
   },
   "name": "smarter-web-solutions",
