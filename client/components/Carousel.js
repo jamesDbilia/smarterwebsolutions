@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 // import peopleMeeting from '../public/img/WebDesign.jpg';
 import peopleMeetingSmall from '../public/img/WebDesignSmall.jpg';
 import peopleMeetingwebSmall from '../public/img/WebDesignSmall.webp';
-import peopleMeetingweb from '../public/img/WebDesign.webp';
+// import peopleMeetingweb from '../public/img/WebDesign.webp';
 import coding from '../public/img/codingCloseUp.jpg';
 import codingSmall from '../public/img/codingCloseUpSmall.jpg';
 import codingwebSmall from '../public/img/codingCloseUpSmall.webp';
