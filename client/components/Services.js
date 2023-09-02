@@ -10,7 +10,7 @@ import MobileFlexibilityIcon1 from '../public/svg/android.svg';
 import MobileFlexibilityIcon2 from '../public/svg/apple.svg';
 
 function Services(props) {
-  const mediaQuery = true
+  const mediaQuery = useMediaQuery(560);
 
   return (
     <section className='services'>
@@ -22,10 +22,10 @@ function Services(props) {
         your ideas are realized.
       </p>
       <div className='service'>
-        <Link href='/services#modern'>
+        <Link href='/services'>
           <div
             style={{ textDecoration: 'none' }}
-            href='/services#modern'
+            href='/services'
             className=' service__item'
           >
             <ModernIcon className='service__icon' />
@@ -52,10 +52,10 @@ function Services(props) {
           </div>
         </Link>
 
-        <Link href='/services#responsive'>
+        <Link href='/services'>
           <div
             style={{ textDecoration: 'none' }}
-            href='/services#responsive'
+            href='/services'
             className=' service__item'
           >
             <ResponsiveIcon className='service__icon' />
@@ -84,7 +84,7 @@ function Services(props) {
 
         <div
           style={{ textDecoration: 'none' }}
-          href='/services#profit'
+          href='/services'
           className=' service__item'
         >
           <ProfitIcon className='service__icon' />
@@ -96,7 +96,7 @@ function Services(props) {
               <p className='service__item__text'>
                 Get your customers shopping on your site, safely and securely.
               </p>
-              <Link href='/services#profit'>
+              <Link href='/services'>
                 <li
                   className='service__item__button'
                   style={{ textDecoration: 'none' }}
@@ -113,7 +113,7 @@ function Services(props) {
         </div>
 <div
           style={{ textDecoration: 'none' }}
-          href='/services#customized'
+          href='/services'
           className=' service__item'
         >
           <CustomizedIcon className='service__icon' />
@@ -121,7 +121,7 @@ function Services(props) {
             <h4 className='heading-4'>Customized Systems</h4>
           </div>
           {!mediaQuery ? (
-            <Link href='/services#customized'>
+            <Link href='/services'>
               <div className='service__item__hover-gradient'>
                 <p className='service__item__text'>
                   Create a custom system for your business.
@@ -143,7 +143,7 @@ function Services(props) {
 
         <div
           style={{ textDecoration: 'none' }}
-          href='/services#technology'
+          href='/services'
           className=' service__item'
         >
           <TechnologyIcon className='service__icon' />
@@ -151,7 +151,7 @@ function Services(props) {
             <h4 className='heading-4'>Technology Integration</h4>
           </div>
           {!mediaQuery ? (
-            <Link href='/services#technology'>
+            <Link href='/services'>
               <div className='service__item__hover-gradient'>
                 <p className='service__item__text'>
                   Combine technologies to improve your users experiences.
@@ -173,7 +173,7 @@ function Services(props) {
 
         <div
           style={{ textDecoration: 'none' }}
-          href='/services#flexibility'
+          href='/services'
           className=' service__item'
         >
           <MobileFlexibilityIcon1 className='service__icon service-icon--modified' style={{ opacity: '.7', marginRight: '8rem', marginBottom: !mediaQuery ? '4rem' : '5rem' }} />
@@ -182,7 +182,7 @@ function Services(props) {
             <h4 className='heading-4'>Mobile Flexibility</h4>
           </div>
           {!mediaQuery ? (
-            <Link href='/services#flexibility'>
+            <Link href='/services'>
               <div className='service__item__hover-gradient'>
                 <p className='service__item__text'>
                   Save the expense of building two applications!
