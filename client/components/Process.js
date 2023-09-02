@@ -1,5 +1,12 @@
 import React from 'react';
+import { Image } from 'next/image';
+import Planning from '../public/svg/planning.svg';
+import Wireframe from '../public/svg/wireframe.svg';
+import WebDesign from '../public/svg/web-design.svg';
+import WebProgramming from '../public/svg/web-programming.svg';
+import FileUpload from '../public/svg/file-upload.svg';
 // import sprite from '../public/svg/sprite.svg';
+
 function Process(props) {
   return (
     <div className='process'>
@@ -9,37 +16,27 @@ function Process(props) {
       <div className='process-grid'>
         <h3 className='process__step process__step--1'>Planning</h3>
         <div className='process__section process__section--1'>
-          <svg className='process__icon process__icon--1'>
-            {/* <use href={`${sprite}#planning`}></use> */}
-          </svg>
+          <Planning className='process__icon process__icon--1' />
         </div>
         <h3 className='process__step process__step--2  '>Blueprint</h3>
         <div className='process__section process__section--2'>
           <div className='process__line-border '></div>
-          <svg className='process__icon '>
-            {/* <use href={`${sprite}#wireframe`}></use> */}
-          </svg>
+          <Wireframe className='process__icon' />
         </div>
         <h3 className='process__step process__step--3 '>Design</h3>
         <div className='process__section process__section--3'>
           <div className='process__line-border '></div>
-          <svg className='process__icon '>
-            {/* <use href={`${sprite}#web-design`}></use> */}
-          </svg>
+          <WebDesign className='process__icon' />
         </div>
         <h3 className='process__step process__step--4 '>Code</h3>
         <div className='process__section process__section--4'>
           <div className='process__line-border '></div>
-          <svg className='process__icon '>
-            {/* <use href={`${sprite}#web-programming`}></use> */}
-          </svg>
+          <WebProgramming className='process__icon' />
         </div>
         <h3 className='process__step process__step--5 '>Deployment</h3>
         <div className='process__section process__section--5'>
           <div className='process__line-border '></div>
-          <svg className='process__icon '>
-            {/* <use href={`${sprite}#file-upload`}></use> */}
-          </svg>
+          <FileUpload className='process__icon' />
         </div>
       </div>
       <div className='process__paragraph'>

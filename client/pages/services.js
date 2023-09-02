@@ -1,11 +1,12 @@
 import React from 'react';
 import teamwork from '../public/img/teamwork.jpg';
+import Image from 'next/image'
 import teamworkSmall from '../public/img/teamworkSmall.jpg';
 import teamworkweb from '../public/img/teamwork.webp';
 import teamworkwebSmall from '../public/img/teamworkSmall.webp';
 import Banner from '../components/Banner';
-import monitor from '../public/img/svg/mobile friendly.svg';
-import mobile from '../public/img/svg/mobilePhone.svg';
+import Monitor from '../public/img/svg/mobile friendly.svg';
+// import Mobile from '../public/img/svg/mobilePhone.svg';
 import responsive from '../public/img/file.png';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
@@ -48,7 +49,7 @@ function ServicesPage(props) {
             or allow your staff to manage orders. We make sure you are not
             limited, no matter what device you are using.
           </p>
-          <img className='services__image  ' alt='monitor ' src={monitor}></img>
+          <Monitor  className='services__image  ' alt='monitor ' />
         </div>
 
         <div className='services__section '>
@@ -88,11 +89,11 @@ function ServicesPage(props) {
             that your inventory and user delivery status is updated
             automatically.
           </p>
-          <img
-            alt='monitor '
+          <Image 
+            alt='monitor'
             className='services__image services__image--1'
             src={responsive}
-          ></img>
+          />
         </div>
         <div className='services__section ' id='profit'>
           <div className='services__title-section'>
@@ -123,11 +124,10 @@ function ServicesPage(props) {
             they rely on browser settings, which are much more stable. This will
             reduce the frequency of updates required for your website.
           </p>
-          <img
-            src={mobile}
-            alt=''
+          {/* <Mobile
+            alt='mobile'
             className='services__image services__image--2'
-          />
+          /> */}
         </div>
         <div className='services__section ' id='technology'>
           <div className='services__title-section'>

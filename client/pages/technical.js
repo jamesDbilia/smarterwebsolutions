@@ -2,11 +2,21 @@ import React from 'react';
 import Banner from '../components/Banner';
 import technical from '../public/img/codingCloseUp.jpg';
 import technicalSmall from '../public/img/codingCloseUpSmall.jpg';
-// import sprite from '../public/svg/sprite.svg';
 import technical1 from '../public/img/codingCloseUp.webp';
 import technical1Small from '../public/img/codingCloseUpSmall.webp';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+
+// Import SVG components
+import Js1 from '../public/svg/js-1.svg';
+import Node from '../public/svg/node.svg';
+import Css3 from '../public/svg/css-3.svg';
+import Html from '../public/svg/html.svg';
+import ReactSvg from '../public/svg/react.svg';
+import Redux from '../public/svg/redux.svg';
+import Mongodb from '../public/svg/mongodb.svg';
+import Sass from '../public/svg/sass.svg';
+
 function TechnicalPage(props) {
   const site = 'https://smarterwebsolutions.ca';
   const canURL = site + useRouter().pathname;
@@ -37,9 +47,7 @@ function TechnicalPage(props) {
 
         <div className='technical__group'>
           <div className='technical__item'>
-            <svg className='technical__icon'>
-              {/* <use href={sprite + '#js-1'}></use> */}
-            </svg>
+            <Js1 className='technical__icon' />
             <h4 className='technical__item-header'>Javascript</h4>
             <p className='technical__item-paragraph'>
               A workhorse and flexible language that creates a rich user
@@ -47,9 +55,7 @@ function TechnicalPage(props) {
             </p>
           </div>
           <div className='technical__item'>
-            <svg className='technical__icon'>
-              {/* <use href={sprite + '#node'}></use> */}
-            </svg>
+            <Node className='technical__icon' />
             <h4 className='technical__item-header'>Node.js</h4>
             <p className='technical__item-paragraph'>
               Node.js is an open source Javascript runtime environment that
@@ -58,9 +64,7 @@ function TechnicalPage(props) {
             </p>
           </div>
           <div className='technical__item'>
-            <svg className='technical__icon'>
-              {/* <use href={sprite + '#css-3'}></use> */}
-            </svg>
+            <Css3 className='technical__icon' />
             <h4 className='technical__item-header'>CSS</h4>
             <p className='technical__item-paragraph'>
               CSS is the engine behind the design of any great website. With new
@@ -69,9 +73,7 @@ function TechnicalPage(props) {
             </p>
           </div>
           <div className='technical__item'>
-            <svg className='technical__icon'>
-              {/* <use href={sprite + '#html'}></use> */}
-            </svg>
+            <Html className='technical__icon' />
             <h4 className='technical__item-header'>HTML</h4>
             <p className='technical__item-paragraph'>
               The backbone of any website is HTML. It is the structure and
@@ -80,9 +82,7 @@ function TechnicalPage(props) {
             </p>
           </div>
           <div className='technical__item'>
-            <svg className='technical__icon'>
-              {/* <use href={sprite + '#react'}></use> */}
-            </svg>
+            <ReactSvg className='technical__icon' />
             <h4 className='technical__item-header'>React</h4>
             <p className='technical__item-paragraph'>
               React is a powerful javascript library used for building efficient
@@ -91,9 +91,7 @@ function TechnicalPage(props) {
             </p>
           </div>
           <div className='technical__item'>
-            <svg className='technical__icon'>
-              {/* <use href={sprite + '#redux'}></use> */}
-            </svg>
+            <Redux className='technical__icon' />
             <h4 className='technical__item-header'>Redux</h4>
             <p className='technical__item-paragraph'>
               Redux is a javascript library used for managing data and
@@ -102,9 +100,7 @@ function TechnicalPage(props) {
             </p>
           </div>
           <div className='technical__item'>
-            <svg className='technical__icon technical__icon--mongo'>
-              {/* <use href={sprite + '#mongodb'}></use> */}
-            </svg>
+            <Mongodb className='technical__icon technical__icon--mongo' />
             <h4 className='technical__item-header'>MongoDB</h4>
             <p className='technical__item-paragraph'>
               MongoDB is a database that is used to flexibly store data sent
@@ -113,10 +109,9 @@ function TechnicalPage(props) {
             </p>
           </div>
           <div className='technical__item'>
-            <svg className='technical__icon'>
-              {/* <use href={sprite + '#sass'}></use> */}
-            </svg>
-            <h4 className='technical__item-header'>Sass</h4>
+            <Sass className='technical__icon' />
+            <h4 className='technical__
+item-header'>Sass</h4>
             <p
               className='technical__item-paragraph'
               style={{ paddingBottom: '3.1rem' }}

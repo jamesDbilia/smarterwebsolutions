@@ -1,7 +1,13 @@
 import React from 'react';
-// import sprite from '../public/svg/sprite.svg';
 import { useInView } from 'react-intersection-observer';
 import IconInfo from './IconInfo';
+
+import Construction from '../public/svg/construction.svg';
+import Utilities from '../public/svg/icon-utilities.svg';
+import Municipal from '../public/svg/icon-municipal.svg';
+import Tree from '../public/svg/icon-tree.svg';
+import Fire from '../public/svg/icon-fire.svg';
+import Lab from '../public/svg/icon-lab.svg';
 
 function Icons({ icons, text, backgroundColor }) {
   const { ref, inView } = useInView({
@@ -29,39 +35,27 @@ function Icons({ icons, text, backgroundColor }) {
       >
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
-          <svg className='project__project-icon'>
-            {/* <use href={sprite + icons[0]}></use> */}
-          </svg>
+          <Construction className='project__project-icon' />
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
-          <svg className='project__project-icon'>
-            {/* <use href={sprite + icons[1]}></use> */}
-          </svg>
+          <Utilities className='project__project-icon' />
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
-          <svg className='project__project-icon'>
-            {/* <use href={sprite + icons[2]}></use> */}
-          </svg>
+          <Municipal className='project__project-icon' />
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
-          <svg className='project__project-icon' style={{ backgroundColor }}>
-            {/* <use href={sprite + icons[3]}></use> */}
-          </svg>
+          <Tree className='project__project-icon' style={{ backgroundColor }} />
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
-          <svg className='project__project-icon'>
-            {/* <use href={sprite + icons[4]}></use> */}
-          </svg>
+          <Fire className='project__project-icon' />
         </div>
         <div className='project__icon-background' style={{ backgroundColor }}>
           {' '}
-          <svg className='project__project-icon'>
-            {/* <use href={sprite + icons[5]}></use> */}
-          </svg>
+          <Lab className='project__project-icon' />
         </div>
       </div>
       <IconInfo text={text} />

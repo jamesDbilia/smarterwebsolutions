@@ -2,8 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { connect } from 'react-redux';
 import { setNavOpen } from '../actions/InViewActions';
-import hello from '../public/img/svg/navBarButton.svg';
+import Hello from '../public/img/svg/navBarButton.svg';
 import logo from '../public/img/logo.png';
+import Image from 'next/image'
 import logoweb from '../public/img/logo.webp';
 import { useMediaQuery } from '../utils/ScreenWidth';
 
@@ -29,7 +30,7 @@ function NavCollapse({ inView: { navOpen }, setNavOpen }) {
         <picture className='nav-bar__logo-picture '>
           <source srcSet={logoweb} type='image/webp' />
           <source srcSet={logo} type='image/jpeg' />
-          <img
+          <Image 
             className='nav-bar__logo nav-bar__logo--collapse'
             src={logo}
             alt='logo'
@@ -39,9 +40,8 @@ function NavCollapse({ inView: { navOpen }, setNavOpen }) {
 
         <div className='navigation'>
           <div className='navigation__icon-section'>
-            <img
+            <Hello 
               className='navigation__icon--1'
-              src={hello}
               alt='navbar button'
               onClick={() => setNavOpen(!navOpen)}
               style={{ transform: navOpen ? 'rotate(150deg)' : 'rotate(0)' }}
@@ -96,7 +96,7 @@ function NavCollapse({ inView: { navOpen }, setNavOpen }) {
                 onClick={() => setNavOpen(false)}
               >
                 <Link href='/'>
-                  <a className='navigation__link '>Home</a>
+                  <p className='navigation__link '>Home</p>
                 </Link>
               </li>
               <li
@@ -105,7 +105,7 @@ function NavCollapse({ inView: { navOpen }, setNavOpen }) {
                 onClick={() => setNavOpen(false)}
               >
                 <Link href='/services'>
-                  <a className='navigation__link'>Services</a>
+                  <p className='navigation__link'>Services</p>
                 </Link>
               </li>
               <li
@@ -114,7 +114,7 @@ function NavCollapse({ inView: { navOpen }, setNavOpen }) {
                 onClick={() => setNavOpen(false)}
               >
                 <Link href='/process'>
-                  <a className='navigation__link'>Process</a>
+                  <p className='navigation__link'>Process</p>
                 </Link>
               </li>
               <li
@@ -123,7 +123,7 @@ function NavCollapse({ inView: { navOpen }, setNavOpen }) {
                 onClick={() => setNavOpen(false)}
               >
                 <Link href='/portfolio'>
-                  <a className='navigation__link'>Portfolio</a>
+                  <p className='navigation__link'>Portfolio</p>
                 </Link>
               </li>
               <li
@@ -132,7 +132,7 @@ function NavCollapse({ inView: { navOpen }, setNavOpen }) {
                 onClick={() => setNavOpen(false)}
               >
                 <Link href='/technical'>
-                  <a className='navigation__link'>Technical</a>
+                  <p className='navigation__link'>Technical</p>
                 </Link>
               </li>
               <li
@@ -141,7 +141,7 @@ function NavCollapse({ inView: { navOpen }, setNavOpen }) {
                 onClick={() => setNavOpen(false)}
               >
                 <Link href='/contact'>
-                  <a className='navigation__link'>Contact</a>
+                  <p className='navigation__link'>Contact</p>
                 </Link>
               </li>
             </ul>

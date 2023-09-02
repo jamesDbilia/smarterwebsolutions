@@ -3,7 +3,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "dev": "NODE_ENV='development' node server.js",
+    "dev": "next dev",
     "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next build && next export",
     "start": "next start"
   },
@@ -11,15 +11,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@opentelemetry/api": "^1.4.1",
+    "@opentelemetry/instrumentation": "^0.41.2",
+    "@opentelemetry/resources": "^1.15.2",
+    "@opentelemetry/sdk-trace-node": "^1.15.2",
+    "@opentelemetry/semantic-conventions": "^1.15.2",
     "@svgr/webpack": "^8.1.0",
-    "@xdn/next": "^2.53.6",
-    "@zeit/next-css": "^1.0.1",
     "axios": "^0.21.1",
+    "babel-plugin-inline-react-svg": "^2.0.2",
     "bootstrap": "^4.6.0",
     "cross-env": "^7.0.3",
     "form-data": "^4.0.0",
     "formik": "^2.2.6",
     "http-proxy-middleware": "^1.0.6",
+    "next": "^13.4.19",
     "next-images": "^1.7.0",
     "next-react-svg": "^1.2.0",
     "next-redux-wrapper": "^6.0.2",
@@ -36,8 +41,6 @@
     "responsive-loader": "^2.3.0",
     "sass": "^1.32.7",
     "svg-sprite-loader": "^5.2.1",
-    "yup": "^0.32.8",
-    "zlib": "^1.0.5"
-  },
-  "proxy": "http://localhost:5000"
+    "yup": "^0.32.8"
+  }
 }

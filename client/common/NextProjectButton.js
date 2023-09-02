@@ -13,7 +13,7 @@ function NextProjectButton(props) {
       <Link to='/mediaor' className='project__next-button-arrow'>
         <svg className='project__next-icon'>
           <use href={sprite + '#play'}></use>
-        </svg>
+        
       </Link>
     </div>
   );

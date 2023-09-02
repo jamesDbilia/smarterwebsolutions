@@ -13,7 +13,7 @@ function NavItem({ nav, active, hover, onClick, onMouseEnter, onMouseLeave }) {
             : 'nav-bar__item'
         }
       >
-        <a
+        <p
           className={
             active || hover
               ? 'nav-bar__link--active nav-bar__link'
@@ -21,7 +21,7 @@ function NavItem({ nav, active, hover, onClick, onMouseEnter, onMouseLeave }) {
           }
         >
           {nav.mainItem}
-        </a>
+        </p>
       </li>
     </Link>
   );

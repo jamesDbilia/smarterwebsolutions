@@ -9,6 +9,7 @@ import Head from 'next/head';
 function App() {
   const site = 'https://smarterwebsolutions.ca';
   const canURL = site + useRouter().pathname;
+  console.log('🚀 ~ file: index.js:12 ~ App ~ canURL:', canURL)
 
   return (
     <>
@@ -27,7 +28,7 @@ function App() {
         <About />
         <Services />
         <Process />
-        <ContactForm />
+        {/* <ContactForm />  */}
       </div>
     </>
   );

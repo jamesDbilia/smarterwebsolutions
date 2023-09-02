@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import happyCustomer from '../public/img/pledge.jpg';
 import happyCustomerSmall from '../public/img/pledgeSmall.jpg';
 import happyCustomerweb from '../public/img/pledge.webp';
@@ -25,7 +26,7 @@ function About(props) {
           srcSet={`${happyCustomer} 600w, ${happyCustomerSmall}`}
           type='image/jpeg'
         />
-        <img
+        <Image
           src={happyCustomer}
           alt='First slide'
           className='about__img'

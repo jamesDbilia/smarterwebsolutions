@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
+import Image from 'next/image'
 import planning from '../public/img/planning.jpg';
 import planningSmall from '../public/img/planningSmall.jpg';
 import wireframing from '../public/img/wireframing.jpg';
@@ -55,7 +56,7 @@ function ProcessPage(props) {
           </p>
         </div>
         <div className='process-page__section'>
-          <img
+          <Image 
             srcSet={`${planningSmall} 600w, ${planning}`}
             src={planning}
             alt=''
@@ -84,13 +85,13 @@ function ProcessPage(props) {
               wireframe of their website.
             </p>
           </div>
-          <img
+          <Image 
             srcSet={`${wireframingSmall} 600w, ${wireframing}`}
             src={wireframing}
             alt=''
             className='process-page__image process-page__image--2'
           />
-          <img
+          <Image 
             srcSet={`${designSmall} 600w, ${design}`}
             src={design}
             alt='design'
@@ -120,13 +121,13 @@ function ProcessPage(props) {
               ensure that the website is running perfectly before deployment.
             </p>
           </div>
-          <img
+          <Image 
             src={codingSmall}
             srcSet={`${codingSmall} 600w, ${coding}`}
             alt='coding'
             className='process-page__image process-page__image--4'
           />
-          <img
+          <Image 
             srcSet={`${deploymentSmall} 600w, ${deployment}`}
             src={deployment}
             alt=''

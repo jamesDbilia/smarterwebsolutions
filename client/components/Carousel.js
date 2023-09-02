@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-// import peopleMeeting from '../public/img/WebDesign.jpg';
+import peopleMeeting from '../public/img/WebDesign.jpg';
+import Image from 'next/image'
 import peopleMeetingSmall from '../public/img/WebDesignSmall.jpg';
 import peopleMeetingwebSmall from '../public/img/WebDesignSmall.webp';
-// import peopleMeetingweb from '../public/img/WebDesign.webp';
+import peopleMeetingweb from '../public/img/WebDesign.webp';
 import coding from '../public/img/codingCloseUp.jpg';
 import codingSmall from '../public/img/codingCloseUpSmall.jpg';
 import codingwebSmall from '../public/img/codingCloseUpSmall.webp';
@@ -44,16 +45,16 @@ function CarouselSection() {
               srcSet={`${peopleMeetingwebSmall} 600w, ${peopleMeetingweb}`}
               type='image/webp'
             />
-            {/* <source
+            <source
               srcSet={`${peopleMeeting} 600w, ${peopleMeetingSmall}`}
               type='image/jpeg'
-            /> */}
-            {/* <img
+            />
+            <Image 
               src={peopleMeeting}
               alt='First slide'
               className='fit'
               loading='lazy'
-            /> */}
+            />
           </picture>
         </Carousel.Item>
 
@@ -89,7 +90,7 @@ function CarouselSection() {
               srcSet={`${coding} 600w, ${codingSmall}`}
               type='image/jpeg'
             />
-            <img
+            <Image 
               src={coding}
               alt='First slide'
               className='fit'
@@ -129,7 +130,7 @@ function CarouselSection() {
               srcSet={`${teamWork} 600w, ${teamWorkSmall}`}
               type='image/jpeg'
             />
-            <img
+            <Image 
               src={teamWork}
               alt='First slide'
               className='fit'

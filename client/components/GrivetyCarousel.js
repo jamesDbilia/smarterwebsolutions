@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image'
+
 import moneytrackerImage3 from '../public/img/svg/grivetyimage3-min.png';
 import moneytrackerImage2 from '../public/img/svg/grivetyImage2-min.png';
 import moneytrackerImage4 from '../public/img/svg/grivetyImage4.svg';
@@ -16,7 +18,7 @@ function GrivetyCarousel(props) {
       <Carousel>
         {/* slide 1 */}
         <Carousel.Item interval={2000}>
-          <img
+          <Image 
             className='fit fit--grivety'
             src={moneytrackerImage4}
             loading='lazy'
@@ -27,7 +29,7 @@ function GrivetyCarousel(props) {
           <picture className='fit fit-grivety'>
             <source srcSet={moneytrackerImage2web} type='image/webp' />
             <source srcSet={moneytrackerImage2} type='image/jpeg' />
-            <img
+            <Image 
               src={moneytrackerImage2}
               loading='lazy'
               alt='First slide'
@@ -40,7 +42,7 @@ function GrivetyCarousel(props) {
           <picture className='fit fit-grivety'>
             <source srcSet={moneytrackerImage3web} type='image/webp' />
             <source srcSet={moneytrackerImage3} type='image/jpeg' />
-            <img
+            <Image 
               src={moneytrackerImage3}
               loading='lazy'
               alt='First slide'
@@ -53,7 +55,7 @@ function GrivetyCarousel(props) {
           <picture className='fit fit-grivety'>
             <source srcSet={moneytrackerImage5web} type='image/webp' />
             <source srcSet={moneytrackerImage5} type='image/jpeg' />
-            <img
+            <Image 
               src={moneytrackerImage5}
               loading='lazy'
               alt='First slide'
@@ -65,7 +67,7 @@ function GrivetyCarousel(props) {
           <picture className='fit fit-grivety'>
             <source srcSet={moneytrackerImage6web} type='image/webp' />
             <source srcSet={moneytrackerImage6} type='image/jpeg' />
-            <img
+            <Image 
               src={moneytrackerImage6}
               loading='lazy'
               alt='First slide'

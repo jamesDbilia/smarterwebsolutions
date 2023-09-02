@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image'
 
 const ImageLoad = React.memo(({ src, placeholder, alt = '' }) => {
   const [loading, setLoading] = useState(true);
@@ -16,7 +17,7 @@ const ImageLoad = React.memo(({ src, placeholder, alt = '' }) => {
   }, [src]);
 
   return (
-    <img
+    <Image 
       src={currentSrc}
       style={{
         opacity: loading ? 0.5 : 1,

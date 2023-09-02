@@ -1,5 +1,6 @@
 import React from 'react';
-import mediaor from '../public/img/svg/mediaor.svg';
+import Image from 'next/image'
+import MediaorLogo from '../public/img/svg/mediaor.svg';
 import mediaorImage1 from '../public/img/mediaorImage1.png';
 import mediaorImage1Small from '../public/img/mediaorImage1Small.png';
 import mediaorImage2 from '../public/img/mediaorImage2.png';
@@ -12,9 +13,9 @@ import Link from 'next/link';
 function Mediaor(props) {
   return (
     <>
-      <img
-        className='portfolio__company-logo portfolio__company-logo--mediaor'
-        src={mediaor}
+      <MediaorLogo
+              className='portfolio__company-logo'
+
         alt='mediaor'
       />
       <p className='portfolio__description'>
@@ -43,7 +44,7 @@ function Mediaor(props) {
             srcSet={`${mediaorImage1} 600w, ${mediaorImage1Small}`}
             type='image/jpeg'
           />
-          <img
+          <Image 
             src={mediaorImage1}
             alt='Mediaor Screenshot'
             className='portfolio__image--mediaor'
@@ -59,7 +60,7 @@ function Mediaor(props) {
             srcSet={`${mediaorImage2} 600w, ${mediaorImage2Small}`}
             type='image/jpeg'
           />
-          <img
+          <Image 
             src={mediaorImage2}
             alt='Mediaor Screenshot'
             className=' portfolio__image--mediaor portfolio__image--mediaor--1'

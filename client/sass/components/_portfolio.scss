@@ -107,7 +107,7 @@
   &__image {
     height: 25rem;
     // margin-bottom: 10rem;
-
+width: 40rem;
     @media only screen and (max-width: 112em) {
       height: 32rem;
     }
@@ -151,6 +151,7 @@
     }
     &--mediaor {
       height: 23rem;
+      width: 50rem;
       margin-bottom: 5rem;
       margin-top: 2rem;
       animation: fadeDown 0.8s ease-in-out;

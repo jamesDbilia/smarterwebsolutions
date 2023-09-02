@@ -1,13 +1,14 @@
 import React from 'react';
-import moneytrackerImage from '../public/img/svg/grivetyImage4.svg';
-import grivetyLogo from '../public/img/svg/grivetylogo-1.svg';
+import Image from 'next/image'
+
+import MoneytrackerImage from '../public/img/svg/grivetyImage4.svg';
+import GrivetyLogo from '../public/img/svg/grivetylogo-1.svg';
 import Link from 'next/link';
 
 function Grivety(props) {
   return (
     <>
-      <img
-        src={grivetyLogo}
+      <GrivetyLogo
         className='portfolio__company-logo'
         alt='grivety logo'
       />
@@ -28,8 +29,7 @@ function Grivety(props) {
         </Link>
       </p>{' '}
       <div className='portfolio__image-section'>
-        <img
-          src={moneytrackerImage}
+        <MoneytrackerImage
           alt='grivety Screenshot'
           className='portfolio__image portfolio__image--grivety'
         />

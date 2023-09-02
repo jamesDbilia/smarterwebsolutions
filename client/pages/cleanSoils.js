@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
+
 import cleanSoilsFan from '../public/img/cleansoilsfan-min.png';
 import cleanSoilsFanSmall from '../public/img/cleansoilsfanSmall-min.png';
 import cleanSoilsFanweb from '../public/img/cleansoilsfan-min.webp';
 import cleanSoilsFanSmallweb from '../public/img/cleansoilsfanSmall-min.webp';
-// import sprite from '../public/svg/sprite.svg';
 import ContactUsProject from '../components/ContactUsProject';
 import ColorPalette from '../components/ColorPalette';
 import { useInView } from 'react-intersection-observer';
@@ -12,6 +13,9 @@ import Typeface from '../components/Typeface';
 import Icons from '../components/Icons';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import CleanSoils from '../public/svg/cleanSoils.svg';
+import Play from '../public/svg/play.svg';
+
 function CleanSoilsPage(props) {
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -33,9 +37,8 @@ function CleanSoilsPage(props) {
         <link rel='canonical' href={canURL} />
       </Head>{' '}
       <div className='project'>
-        <svg className='portfolio__company-logo'>
-          {/* <use href={sprite + '#cleanSoils'}></use> */}
-        </svg>
+      <CleanSoils className='portfolio__company-logo' />
+
         <p className='project__description'>
           Clean Soils was looking to upgrade their site to professional look so
           they could compete with their competition. They received a website
@@ -52,7 +55,7 @@ function CleanSoilsPage(props) {
             srcSet={`${cleanSoilsFan} 600w, ${cleanSoilsFanSmall}`}
             type='image/jpeg'
           />
-          <img
+          <Image 
             src={cleanSoilsFan}
             alt='Mediaor Screenshot'
             className='project__image'
@@ -112,7 +115,7 @@ function CleanSoilsPage(props) {
       <div className='project__deliverables project__deliverables--1'>
         <svg className='project__project-icon'>
           <use href={CleanSoilsSprite + '#reduction'}></use>
-        </svg>
+        
         <h4 className='project__deliverables--title'>Admin Panel</h4>
         <p className='project__deliverables--description'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
@@ -123,7 +126,7 @@ function CleanSoilsPage(props) {
       <div className='project__deliverables project__deliverables--2'>
         <svg className='project__deliverable-icon'>
           <use></use>
-        </svg>
+        
         <h4 className='project__deliverables--title'>Admin Panel</h4>
         <p className='project__deliverables--description'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
@@ -137,15 +140,8 @@ function CleanSoilsPage(props) {
         <div className='project__next-button-section'>
           <Link href='/grivety'>
             <button className='project__next-button'>
-              <a className='project__next-button--text'>Next Project</a>
+              <p className='project__next-button--text'>Next Project</p>
             </button>
-          </Link>
-          <Link href='/grivety'>
-            <a className='project__next-button-arrow'>
-              <svg className='project__next-icon'>
-                {/* <use href={sprite + '#play'}></use> */}
-              </svg>
-            </a>
           </Link>
         </div>
       </div>

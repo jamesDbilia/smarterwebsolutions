@@ -1,7 +1,8 @@
 import React from 'react';
+import Image from 'next/image'
 import moneytrackerImage3 from '../public/img/svg/grivetyimage3-min.png';
 import moneytrackerImage2 from '../public/img/svg/grivetyImage2-min.png';
-import moneytrackerImage4 from '../public/img/svg/grivetyImage4.svg';
+import MoneytrackerImage4 from '../public/img/svg/grivetyImage4.svg';
 import moneytrackerImage5 from '../public/img/svg/grivetyImage5-min.png';
 import moneytrackerImage6 from '../public/img/svg/grivetyImage6-min.png';
 
@@ -137,46 +138,45 @@ function ImageSlider(props) {
   return (
     <section className='row'>
       <div className='nine columns'>
-        <div className='coverflow top10 bot10'>
-          <button style={{ border: 'none' }} className='prev-arrow'></button>
+        {/* <div className='coverflow top10 bot10'> */}
+          {/* <button style={{ border: 'none' }} className='prev-arrow'></button> */}
           <a>
-            <img
+            <Image 
               alt='slide-1'
               src={moneytrackerImage2}
               className='coverflow__image'
             />
           </a>
           <a>
-            <img
+            <Image 
               alt='slide-2'
               src={moneytrackerImage3}
               className='coverflow__image'
             />
           </a>
-          <a>
-            <img
+          {/* <a>
+            <MoneytrackerImage4 
               alt='slide-3'
-              src={moneytrackerImage4}
               className='coverflow__image'
             />
           </a>
           <a>
-            <img
+            <Image 
               alt='slide-4'
               src={moneytrackerImage5}
               className='coverflow__image'
             />
           </a>
           <a>
-            <img
+            <Image 
               alt='slide-5'
               src={moneytrackerImage6}
               className='coverflow__image'
             />
           </a>
-          <button style={{ border: 'none' }} className='next-arrow'></button>
+          <button style={{ border: 'none' }} className='next-arrow'></button> */}
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 }

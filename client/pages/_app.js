@@ -14,13 +14,6 @@ const MyApp = ({ Component, pageProps }) => {
     ssr: false,
   });
 
-  useEffect(() => {
-    ReactGA.initialize('UA-189418529-1');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  });
-
-  const canURL = useRouter().pathname;
-  console.log('🚀 ~ file: _app.js ~ line 22 ~ MyApp ~ canURL', canURL);
 
   const store = useStore(pageProps.initialReduxState);
   return (

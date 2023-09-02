@@ -1,24 +1,24 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-// import sprite from '../public/svg/sprite.svg';
 import ContactUsProject from '../components/ContactUsProject';
 import ColorPalette from '../components/ColorPalette';
 import { useInView } from 'react-intersection-observer';
 import Typeface from '../components/Typeface';
 import Icons from '../components/Icons';
-import grivetyLogo from '../public/img/svg/grivetylogo-1.svg';
+import GrivetyLogo from '../public/img/svg/grivetylogo-1.svg';
 import GrivetyCarousel from '../components/GrivetyCarousel';
 import { useMediaQuery } from '../utils/ScreenWidth';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+
 const DynamicComponent = dynamic(() => import('../components/ImageSlider'), {
   ssr: false,
 });
+
 function GrivetyPage({ color }) {
-  const { ref, inView } = useInView({
-    // triggerOnce: true,
-  });
+  const { ref, inView } = useInView();
   const mediaQuery = useMediaQuery(770);
 
   const site = 'https://smarterwebsolutions.ca';
@@ -30,15 +30,13 @@ function GrivetyPage({ color }) {
         <meta
           name='description'
           content='Grivety displays the complexity that we can create, no matter how difficult your projectk'
-        ></meta>
-
+        />
         <title>Web Design Toronto - Grivety</title>
         <link rel='canonical' href={canURL} />
       </Head>
       <div className='project'>
         <div className='project__company-logo-section'>
-          <img
-            src={grivetyLogo}
+          <GrivetyLogo
             className='portfolio__company-logo portfolio__company-logo--grivety'
             alt='grivety logo'
           />
@@ -92,57 +90,13 @@ function GrivetyPage({ color }) {
           ]}
           text='It is essential that Grivety had advanced security features to protect sensitive information.  Smarter Web Solutions ensures with every application we create that the highest level of security is used to protect user data and your data.'
         />
-        {/* <h2 className='project__large-header'>
-        Final
-        <span className='project__large-header project__large-header--1'>
-          Product
-        </span>
-      </h2> */}
-        {/* <div className='project__final-image-section'></div>
-      <h4 className='project__deliverables-header'>Deliverables</h4>
-      <div className='project__deliverables project__deliverables--1'>
-        <svg className='project__project-icon'>
-          <use href={CleanSoilsSprite + '#reduction'}></use>
-        </svg>
-        <h4 className='project__deliverables--title'>Admin Panel</h4>
-        <p className='project__deliverables--description'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-          deleniti!
-        </p>
-        project__deliverables
-      </div>
-      <div className='project__deliverables project__deliverables--2'>
-        <svg className='project__deliverable-icon'>
-          <use></use>
-        </svg>
-        <h4 className='project__deliverables--title'>Admin Panel</h4>
-        <p className='project__deliverables--description'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-          deleniti!
-        </p>
-      </div> */}
-
         <h2 className='project__contact-header'>Contact Us</h2>
         <ContactUsProject />
-        <div
-          className='project__next-button-section'
-          // onClick={() => refreshPage()}
-          style={{ cursor: 'default' }}
-        >
+        <div className='project__next-button-section'>
           <Link href='/mediaor'>
-            <a className='project__next-button' style={{ cursor: 'pointer' }}>
+            <li className='project__next-button'>
               <p className='project__next-button--text'>Next Project</p>
-            </a>
-          </Link>
-          <Link href='/mediaor'>
-            <a
-              className='project__next-button-arrow'
-              style={{ cursor: 'pointer' }}
-            >
-              <svg className='project__next-icon'>
-                {/* <use href={sprite + '#play'}></use> */}
-              </svg>
-            </a>
+            </li>
           </Link>
         </div>
       </div>

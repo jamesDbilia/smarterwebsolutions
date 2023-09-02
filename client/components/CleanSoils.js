@@ -1,21 +1,19 @@
 import React from 'react';
-import cleanSoils from '../public/img/cleanSoils1.png';
-import cleanSoilsSmall from '../public/img/cleanSoils1Small.png';
-import cleanSoils1 from '../public/img/cleanSoils2.png';
-import cleanSoils1Small from '../public/img/cleanSoils2Small.png';
-import cleanSoilsweb from '../public/img/cleanSoils1.webp';
-import cleanSoilsSmallweb from '../public/img/cleanSoils1Small.webp';
-import cleanSoils1web from '../public/img/cleanSoils2.webp';
-import cleanSoils1Smallweb from '../public/img/cleanSoils2Small.webp';
-// import sprite from '../public/svg/sprite.svg';
+import CleanSoilsSVG from '../public/svg/cleanSoils.svg';
+import CleanSoils1 from '../public/img/cleanSoils2.png';
+import CleanSoils1Small from '../public/img/cleanSoils2Small.png';
+import CleanSoils1Web from '../public/img/cleanSoils2.webp';
+import CleanSoils1SmallWeb from '../public/img/cleanSoils2Small.webp';
+import CleanSoils from '../public/img/cleanSoils1.png';
+import CleanSoilsSmall from '../public/img/cleanSoils1Small.png';
+import CleanSoilsWeb from '../public/img/cleanSoils1.webp';
+import CleanSoilsSmallWeb from '../public/img/cleanSoils1Small.webp';
 import Link from 'next/link';
-
-function CleanSoils(props) {
+import Image from 'next/image'
+function CleanSoilsComponent(props) {
   return (
     <>
-      <svg className='portfolio__company-logo'>
-        {/* <use href={sprite + '#cleanSoils'}></use> */}
-      </svg>
+      <CleanSoilsSVG className='portfolio__company-logo'/>   
       <p className='portfolio__description'>
         Clean Soils wanted to build a modern website to rival their competitors.
         The minimalistic animation effects and sharp design provide users with a
@@ -35,15 +33,15 @@ function CleanSoils(props) {
       <div className='portfolio__image-section'>
         <picture className='portfolio__image-picture '>
           <source
-            srcSet={`${cleanSoils1Smallweb} 600w, ${cleanSoils1web}`}
+            srcSet={`${CleanSoils1SmallWeb} 600w, ${CleanSoils1Web}`}
             type='image/webp'
           />
           <source
-            srcSet={`${cleanSoils1} 600w, ${cleanSoils1Small}`}
+            srcSet={`${CleanSoils1} 600w, ${CleanSoils1Small}`}
             type='image/jpeg'
           />
-          <img
-            src={cleanSoils1}
+          <Image 
+            src={CleanSoils1}
             alt='CleanSoils Screenshot'
             className='portfolio__image portfolio__image--1'
             loading='lazy'
@@ -51,15 +49,15 @@ function CleanSoils(props) {
         </picture>
         <picture className='portfolio__image-picture '>
           <source
-            srcSet={`${cleanSoilsSmallweb} 600w, ${cleanSoilsweb}`}
+            srcSet={`${CleanSoilsSmallWeb} 600w, ${CleanSoilsWeb}`}
             type='image/webp'
           />
           <source
-            srcSet={`${cleanSoils} 600w, ${cleanSoilsSmall}`}
+            srcSet={`${CleanSoils} 600w, ${CleanSoilsSmall}`}
             type='image/jpeg'
           />
-          <img
-            src={cleanSoils}
+          <Image 
+            src={CleanSoils}
             alt='CleanSoils Screenshot'
             className='portfolio__image portfolio__image--2'
             loading='lazy'
@@ -70,4 +68,4 @@ function CleanSoils(props) {
   );
 }
 
-export default CleanSoils;
+export default CleanSoilsComponent;

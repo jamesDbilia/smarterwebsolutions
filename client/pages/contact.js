@@ -1,9 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner';
-// import sprite from '../public/svg/sprite.svg';
+import Image from 'next/image';
 import ContactFormSmall from '../components/ContactFormSmall';
-import contact from '../public/img/contact.jpg';
-import contactSmall from '../public/img/contactSmall.jpg';
 import toronto from '../public/img/toronto.jpg';
 import torontoSmall from '../public/img/torontoSmall.jpg';
 import contactweb from '../public/img/contact.webp';
@@ -12,6 +10,7 @@ import torontoweb from '../public/img/toronto.webp';
 import torontowebSmall from '../public/img/torontoSmall.webp';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+
 function ContactPage(props) {
   const site = 'https://smarterwebsolutions.ca';
   const canURL = site + useRouter().pathname;
@@ -23,15 +22,12 @@ function ContactPage(props) {
         <meta
           name='description'
           content='Contact us today and let us help you build your website design'
-        ></meta>
-
+        />
         <link rel='canonical' href={canURL} />
       </Head>
       <Banner
-        img={contact}
-        imgSmall={contactSmall}
-        web={contactweb}
-        webSmall={contactwebSmall}
+        img={contactweb}
+        imgSmall={contactwebSmall}
         text='Contact'
         modifier='--contact'
       />
@@ -40,10 +36,7 @@ function ContactPage(props) {
           <h3 className='contact-page__header'>Get In Touch</h3>
           <ContactFormSmall />
         </div>
-        <div
-          className='
-        contact-page__col-2'
-        >
+        <div className='contact-page__col-2'>
           <h3 className='contact-page__header contact-page__header--1'>
             Our Contact Info
           </h3>
@@ -56,7 +49,7 @@ function ContactPage(props) {
               srcSet={`${toronto} 600w, ${torontoSmall}`}
               type='image/jpeg'
             />
-            <img
+            <Image
               src={toronto}
               alt='Toronto'
               className='contact-page__location-image'
@@ -68,9 +61,11 @@ function ContactPage(props) {
           <div className='contact-page__info-section'>
             <div className='contact-page__info-section--col-1'>
               <div className='contact-page__info-header-section'>
-                <svg className='contact-page__info-icon'>
-                  {/* <use href={sprite + '#location'}></use>{' '} */}
-                </svg>
+                <Image
+                  src='/svg/location.svg'
+                  alt='Location'
+                  className='contact-page__info-icon'
+                />
                 <h5 className='contact-page__info-header'>Address</h5>
               </div>
               <p className='contact-page__info-specifics'>
@@ -78,23 +73,23 @@ function ContactPage(props) {
               </p>
 
               <div className='contact-page__info-header-section'>
-                <svg className='contact-page__info-icon'>
-                  {/* <use href={sprite + '#phone-call'}></use> */}
-                </svg>
-
+                <Image
+                  src='/svg/phone-call.svg'
+                  alt='Phone'
+                  className='contact-page__info-icon'
+                />
                 <h5 className='contact-page__info-header'>Phone</h5>
               </div>
-              <a
-                href='tel:416-577-4245'
-                className='contact-page__info-specifics'
-              >
+              <a href='tel:416-577-4245' className='contact-page__info-specifics'>
                 416-577-4245
               </a>
 
               <div className='contact-page__info-header-section'>
-                <svg className='contact-page__info-icon'>
-                </svg>
-
+                <Image
+                  src='/svg/email.svg'
+                  alt='Email'
+                  className='contact-page__info-icon'
+                />
                 <h5 className='contact-page__info-header'>Email</h5>
               </div>
 

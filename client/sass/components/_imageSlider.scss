@@ -11,13 +11,16 @@
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
-
+a{
+  text-decoration: none;
+}
 .coverflow__image {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 50rem;
+  width: 40rem;
+  height:auto;
 
   // height: 50rem;
   -webkit-transition: all 350ms cubic-bezier(0.215, 0.61, 0.355, 1);

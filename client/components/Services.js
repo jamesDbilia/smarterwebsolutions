@@ -1,9 +1,16 @@
 import React from 'react';
-// import sprite from '../public/svg/sprite.svg';
 import Link from 'next/link';
 import { useMediaQuery } from '../utils/ScreenWidth';
+import ModernIcon from '../public/svg/ux-design.svg';
+import ResponsiveIcon from '../public/svg/coding.svg';
+import ProfitIcon from '../public/svg/ecommerce.svg';
+import CustomizedIcon from '../public/svg/dashboard.svg';
+import TechnologyIcon from '../public/svg/api.svg';
+import MobileFlexibilityIcon1 from '../public/svg/android.svg';
+import MobileFlexibilityIcon2 from '../public/svg/apple.svg';
+
 function Services(props) {
-  const mediaQuery = useMediaQuery(560);
+  const mediaQuery = true
 
   return (
     <section className='services'>
@@ -21,9 +28,7 @@ function Services(props) {
             href='/services#modern'
             className=' service__item'
           >
-            <svg className='service__icon'>
-              {/* <use href={sprite + '#ux-design'}></use> */}
-            </svg>
+            <ModernIcon className='service__icon' />
             <div className='heading-4__section'>
               <h4 className='heading-4'>Modern UI/UX Design</h4>
             </div>
@@ -32,12 +37,12 @@ function Services(props) {
                 <p className='service__item__text'>
                   Get the professional site you've always wanted.
                 </p>
-                <a
+                <li
                   className='service__item__button'
                   style={{ textDecoration: 'none' }}
                 >
                   <p className='service__button-text'>Learn More</p>
-                </a>
+                </li>
               </div>
             ) : (
               <p className='service__item__text'>
@@ -47,48 +52,42 @@ function Services(props) {
           </div>
         </Link>
 
-        <div
-          style={{ textDecoration: 'none' }}
-          href='/services#responsive'
-          className=' service__item'
-        >
-          <svg className='service__icon'>
-            {/* <use href={sprite + '#coding'}></use> */}
-          </svg>
-          <div className='heading-4__section'>
-            <h4 className='heading-4'>Responsive Design</h4>
-          </div>
-          {!mediaQuery ? (
-            <Link href='/services#responsive'>
+        <Link href='/services#responsive'>
+          <div
+            style={{ textDecoration: 'none' }}
+            href='/services#responsive'
+            className=' service__item'
+          >
+            <ResponsiveIcon className='service__icon' />
+            <div className='heading-4__section'>
+              <h4 className='heading-4'>Responsive Design</h4>
+            </div>
+            {!mediaQuery ? (
               <div className='service__item__hover-gradient'>
                 <p className='service__item__text'>
                   Your website, looking great, on any device.
                 </p>
-                <a
+                <li
                   className='service__item__button'
                   style={{ textDecoration: 'none' }}
                 >
                   <p className='service__button-text'>Learn More</p>
-                </a>
+                </li>
               </div>
-            </Link>
-          ) : (
-            <Link href='/services#responsive'>
+            ) : (
               <p className='service__item__text'>
                 Your website, looking great, on any device.
               </p>
-            </Link>
-          )}
-        </div>
+            )}
+          </div>
+        </Link>
 
         <div
           style={{ textDecoration: 'none' }}
           href='/services#profit'
           className=' service__item'
         >
-          <svg className='service__icon'>
-            {/* <use href={sprite + '#ecommerce'}></use> */}
-          </svg>
+          <ProfitIcon className='service__icon' />
           <div className='heading-4__section'>
             <h4 className='heading-4'>Profit Online</h4>
           </div>
@@ -98,12 +97,12 @@ function Services(props) {
                 Get your customers shopping on your site, safely and securely.
               </p>
               <Link href='/services#profit'>
-                <a
+                <li
                   className='service__item__button'
                   style={{ textDecoration: 'none' }}
                 >
                   <p className='service__button-text'>Learn More</p>
-                </a>
+                </li>
               </Link>
             </div>
           ) : (
@@ -112,15 +111,12 @@ function Services(props) {
             </p>
           )}
         </div>
-
-        <div
+<div
           style={{ textDecoration: 'none' }}
           href='/services#customized'
           className=' service__item'
         >
-          <svg className='service__icon'>
-            {/* <use href={sprite + '#dashboard'}></use> */}
-          </svg>
+          <CustomizedIcon className='service__icon' />
           <div className='heading-4__section'>
             <h4 className='heading-4'>Customized Systems</h4>
           </div>
@@ -130,12 +126,12 @@ function Services(props) {
                 <p className='service__item__text'>
                   Create a custom system for your business.
                 </p>
-                <a
+                <li
                   style={{ textDecoration: 'none' }}
                   className='service__item__button'
                 >
                   <p className='service__button-text'>Learn More</p>
-                </a>
+                </li>
               </div>
             </Link>
           ) : (
@@ -150,9 +146,7 @@ function Services(props) {
           href='/services#technology'
           className=' service__item'
         >
-          <svg className='service__icon'>
-            {/* <use href={sprite + '#api'}></use> */}
-          </svg>
+          <TechnologyIcon className='service__icon' />
           <div className='heading-4__section'>
             <h4 className='heading-4'>Technology Integration</h4>
           </div>
@@ -162,12 +156,12 @@ function Services(props) {
                 <p className='service__item__text'>
                   Combine technologies to improve your users experiences.
                 </p>
-                <a
+                <li
                   style={{ textDecoration: 'none' }}
                   className='service__item__button'
                 >
                   <p className='service__button-text'>Learn More</p>
-                </a>
+                </li>
               </div>
             </Link>
           ) : (
@@ -182,27 +176,8 @@ function Services(props) {
           href='/services#flexibility'
           className=' service__item'
         >
-          <svg
-            className='service__icon service-icon--modified'
-            style={{
-              opacity: '.7',
-              marginRight: '8rem',
-              marginBottom: !mediaQuery ? '4rem' : '5rem',
-            }}
-          >
-            {/* <use href={sprite + '#android'}></use> */}
-          </svg>
-          <svg
-            className='service__icon service-icon--modified'
-            style={{
-              opacity: '.8',
-              marginLeft: '10rem',
-              marginTop: !mediaQuery ? '4rem' : '2.5rem',
-              fill: '#bd80e1',
-            }}
-          >
-            {/* <use href={sprite + '#apple'}></use> */}
-          </svg>
+          <MobileFlexibilityIcon1 className='service__icon service-icon--modified' style={{ opacity: '.7', marginRight: '8rem', marginBottom: !mediaQuery ? '4rem' : '5rem' }} />
+          <MobileFlexibilityIcon2 className='service__icon service-icon--modified' style={{ opacity: '.8', marginLeft: '10rem', marginTop: !mediaQuery ? '4rem' : '2.5rem', fill: '#bd80e1' }} />
           <div className='heading-4__section'>
             <h4 className='heading-4'>Mobile Flexibility</h4>
           </div>
@@ -213,12 +188,12 @@ function Services(props) {
                   Save the expense of building two applications!
                 </p>
 
-                <a
+                <li
                   style={{ textDecoration: 'none' }}
                   className='service__item__button'
                 >
                   <p className='service__button-text'>Learn More</p>
-                </a>
+                </li>
               </div>
             </Link>
           ) : (
@@ -227,10 +202,10 @@ function Services(props) {
             </p>
           )}
         </div>
+        {/* Similar modifications for other sections */}
       </div>
     </section>
   );
 }
 
 export default Services;
-// fix footer

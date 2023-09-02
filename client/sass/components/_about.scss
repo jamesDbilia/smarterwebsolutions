@@ -37,6 +37,7 @@
   &__img {
     grid-column: 3/4;
     width: 100%;
+    height:auto;
     margin: 2rem 0 5rem 0;
     @include respond(tab-port) {
       grid-column: 2/4;

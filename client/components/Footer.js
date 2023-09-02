@@ -2,7 +2,12 @@ import React from 'react';
 import logo from '../public/img/logo.png';
 import logoweb from '../public/img/logo.webp';
 import Link from 'next/link';
-// import sprite from '../public/svg/sprite.svg';
+import Image from 'next/image'
+import LocationIcon from '../public/svg/location.svg';
+import PhoneCallIcon from '../public/svg/phone-call.svg';
+import EmailIcon from '../public/svg/email.svg';
+import FacebookIcon from '../public/svg/facebook.svg';
+import InstagramIcon from '../public/svg/instagram.svg';
 import { useMediaQuery } from '../utils/ScreenWidth';
 
 function Footer(props) {
@@ -24,23 +29,23 @@ function Footer(props) {
           </h3>
           <div className='footer__link-section'>
             <Link href='/'>
-              <a className='footer__text footer__text--link'>Home</a>
+              <p className='footer__text footer__text--link'>Home</p>
             </Link>
 
             <Link href='/services'>
-              <a className='footer__text footer__text--link'>Services</a>
+              <p className='footer__text footer__text--link'>Services</p>
             </Link>
             <Link href='/process'>
-              <a className='footer__text footer__text--link'>Process</a>
+              <p className='footer__text footer__text--link'>Process</p>
             </Link>
             <Link href='/portfolio'>
-              <a className='footer__text footer__text--link'>Portfolio</a>
+              <p className='footer__text footer__text--link'>Portfolio</p>
             </Link>
             <Link href='/technical'>
-              <a className='footer__text footer__text--link'>Technical</a>
+              <p className='footer__text footer__text--link'>Technical</p>
             </Link>
             <Link href='/contact'>
-              <a className='footer__text footer__text--link'>Contact</a>
+              <p className='footer__text footer__text--link'>Contact</p>
             </Link>
           </div>
         </div>
@@ -56,9 +61,8 @@ function Footer(props) {
           <div className='footer__info-section'>
             <div className='footer__info-section--col-1'>
               <div className='footer__info-header-section'>
-                <svg className='footer__info-icon'>
-                  {/* <use href={sprite + '#location'}></use>{' '} */}
-                </svg>
+              <LocationIcon alt="Location Icon" className='footer__info-icon' />
+
                 {!mediaQuery ? (
                   <p className='footer__text footer__contact-info'>
                     1960 Queen Street E, Toronto, ON M4L 1H8
@@ -73,9 +77,8 @@ function Footer(props) {
               </div>
 
               <div className='footer__info-header-section'>
-                <svg className='footer__info-icon'>
-                  {/* <use href={sprite + '#phone-call'}></use> */}
-                </svg>
+              <PhoneCallIcon alt="Phone Call Icon" className='footer__info-icon' />
+
                 <a
                   href='tel:416-577-4245'
                   className='footer__text footer__contact-info'
@@ -85,9 +88,7 @@ function Footer(props) {
               </div>
 
               <div className='footer__info-header-section'>
-                <svg className='footer__info-icon'>
-                  {/* <use href={sprite + '#email'}></use> */}
-                </svg>
+              <EmailIcon alt="Email Icon" className='footer__info-icon' />
                 <a
                   href='mailto:contact@smarterwebsolutions.ca'
                   target='_blank'
@@ -112,9 +113,8 @@ function Footer(props) {
             target='_blank'
             rel='noreferrer'
           >
-            <svg className='footer__social-icon footer__social-icon--1'>
-              {/* <use href={sprite + '#facebook'}></use> */}
-            </svg>
+              <FacebookIcon alt="Facebook Icon" className='footer__social-icon footer__social-icon--1' />
+            
           </a>
 
           <a
@@ -123,15 +123,15 @@ function Footer(props) {
             target='_blank'
             rel='noreferrer'
           >
-            <svg className='footer__social-icon  footer__social-icon--2'>
-              {/* <use href={sprite + '#instagram'}></use> */}
-            </svg>
+                    <InstagramIcon alt="Instagram Icon" className='footer__social-icon footer__social-icon--2' />
+
+            
           </a>
 
           {/* <a className='footer__social-icon-section' href='/'>
-            <svg className='footer__social-icon'>
-              <use href={sprite + '#linkedin'}></use>
-            </svg>
+                    <Image src={linkedinIcon} alt="LinkedIn Icon" className='footer__social-icon' />
+
+            
           </a> */}
         </div>
 
